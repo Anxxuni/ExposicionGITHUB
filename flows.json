@@ -28,7 +28,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 170,
+        "x": 150,
         "y": 100,
         "wires": [
             [
@@ -49,8 +49,8 @@
         "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 560,
-        "y": 100,
+        "x": 600,
+        "y": 140,
         "wires": []
     },
     {
