@@ -21,18 +21,18 @@
                 "vt": "str"
             }
         ],
-        "repeat": "",
+        "repeat": "5",
         "crontab": "",
         "once": false,
         "onceDelay": 0.1,
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 180,
+        "x": 170,
         "y": 100,
         "wires": [
             [
-                "c3f8295a55ce7119"
+                "9c1a64c6fa6cfa60"
             ]
         ]
     },
@@ -45,11 +45,32 @@
         "tosidebar": true,
         "console": false,
         "tostatus": false,
-        "complete": "false",
+        "complete": "payload",
+        "targetType": "msg",
         "statusVal": "",
         "statusType": "auto",
-        "x": 520,
-        "y": 140,
+        "x": 560,
+        "y": 100,
         "wires": []
+    },
+    {
+        "id": "9c1a64c6fa6cfa60",
+        "type": "function",
+        "z": "e9614aebe29287db",
+        "name": "function 1",
+        "func": "msg.payload = \"Hola Ingeniero, este mensaje viene desde Node-RED\";\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 100,
+        "wires": [
+            [
+                "c3f8295a55ce7119"
+            ]
+        ]
     }
 ]
